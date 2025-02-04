@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,11 +7,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
         children: [
-          const StoryArea(),
-          const FeedList(),
+          StoryArea(),
+          FeedList(),
         ]
       ),
     );
@@ -132,7 +131,7 @@ class FeedItem extends StatelessWidget {
                   Text(feedData.userName),
                 ],
               ),
-              Icon(Icons.more_vert),
+              const Icon(Icons.more_vert),
             ],
           ),
         ),
@@ -149,12 +148,12 @@ class FeedItem extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  IconButton(onPressed: () {}, icon:Icon(Icons.favorite_outline)),
-                  IconButton(onPressed: () {}, icon:Icon(CupertinoIcons.chat_bubble)),
-                  IconButton(onPressed: () {}, icon:Icon(CupertinoIcons.paperplane)),
+                  IconButton(onPressed: () {}, icon:const Icon(Icons.favorite_outline)),
+                  IconButton(onPressed: () {}, icon:const Icon(CupertinoIcons.chat_bubble)),
+                  IconButton(onPressed: () {}, icon:const Icon(CupertinoIcons.paperplane)),
                 ],
               ),
-              IconButton(onPressed: () {}, icon:Icon(CupertinoIcons.bookmark)),
+              IconButton(onPressed: () {}, icon:const Icon(CupertinoIcons.bookmark)),
             ],
           ),
         ),
@@ -165,7 +164,7 @@ class FeedItem extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           child: RichText(text: TextSpan(children: [
-            TextSpan(text:feedData.userName, style:TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(text:feedData.userName, style:const TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(text: feedData.content),
           ],
           style: const TextStyle(color:Colors.black),

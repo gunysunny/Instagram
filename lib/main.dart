@@ -27,7 +27,7 @@ void main() {
         ),
         useMaterial3: true,
       ),
-      home: InstaCloneHome(),
+      home: const InstaCloneHome(),
     );
   }
  }
@@ -77,10 +77,10 @@ class _InstaCloneHomeState extends State<InstaCloneHome> {
             elevation: 0, // 기본 elevation 제거
             backgroundColor: Colors.transparent, // 배경 투명화
             actions: [
-              IconButton(icon: Icon(Icons.favorite_outline, size: 32), onPressed: () {
+              IconButton(icon: const Icon(Icons.favorite_outline, size: 32), onPressed: () {
                 print('Tap');
               },),
-              IconButton(icon: Icon(CupertinoIcons.paperplane, size: 32,), onPressed: (){
+              IconButton(icon: const Icon(CupertinoIcons.paperplane, size: 32,), onPressed: (){
                 print('Tap');
               },),
             ],

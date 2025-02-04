@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -6,7 +5,7 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -34,7 +33,7 @@ class SearchTextBar extends StatelessWidget {
         child: TextField(
           cursorColor: Colors.black,
           decoration: InputDecoration(
-            prefixIcon: Icon(Icons.search),
+            prefixIcon: const Icon(Icons.search),
             hintText: '검색',
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),
