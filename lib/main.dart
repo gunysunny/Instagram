@@ -33,12 +33,16 @@ void main() {
  }
 
 
+
  class InstaCloneHome extends StatefulWidget{
   const InstaCloneHome({super.key});
 
   @override
   State<InstaCloneHome> createState() => _InstaCloneHomeState();
 }
+
+
+
 
 class _InstaCloneHomeState extends State<InstaCloneHome> {
   late int index;
@@ -48,9 +52,6 @@ class _InstaCloneHomeState extends State<InstaCloneHome> {
     super.initState();
     index = 0;
   }
-
-
-
 
   @override
   Widget build(BuildContext context) {
