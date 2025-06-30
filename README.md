@@ -45,8 +45,8 @@ Flutter를 활용해 제작한 인스타그램 클론코딩 프로젝트입니�
 
 ## 🖼️ 스크린샷
 
-![메인화면](./images/profile/1.png)
-![피드화면](./images/profile/2.png)
+![메인화면](./images/1.png)
+![피드화면](./images/2.png)
 
 ---
 
